@@ -21,6 +21,7 @@ body {
 .wrapper {
   display: flex;
   height: 100vh;
+
 }
 
 .column {
@@ -153,5 +154,48 @@ body {
       height: 20px;
     }
   }
+  &__icon-error {
+    display: none;
+    position: absolute;
+    top: 1.4rem;
+    left: 24rem;
+
+    img{
+      display: inline-block;
+      width: 75%;
+    }
+  }
+  &__invalid {
+    display: none;
+    color: hsl(0, 93%, 68%);
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+.success{
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 22rem;
+  border-radius: 2rem;
+  box-shadow: 2rem 0rem 2rem rgba(0,0,0,0.5);
+  font-size: 4rem;
+
+  span {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &--1 {
+    color: hsl(0, 36%, 70%);
+    font-weight: 700;
+  }
+
 
 }

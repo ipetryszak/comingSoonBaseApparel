@@ -122,5 +122,44 @@ body {
   width: 12px;
   height: 20px;
 }
+.email-form__icon-error {
+  display: none;
+  position: absolute;
+  top: 1.4rem;
+  left: 24rem;
+}
+.email-form__icon-error img {
+  display: inline-block;
+  width: 75%;
+}
+.email-form__invalid {
+  display: none;
+  color: #f96262;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+.success {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 22rem;
+  border-radius: 2rem;
+  box-shadow: 2rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+}
+.success span {
+  display: block;
+  padding: 2rem;
+  text-align: center;
+}
+.success--1 {
+  color: #ce9797;
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=style.css.map */
