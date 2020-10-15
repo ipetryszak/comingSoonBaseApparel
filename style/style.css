@@ -31,7 +31,7 @@ body {
   flex-direction: column;
 }
 .column__element {
-  padding: 0rem 10rem;
+  padding: 0 10rem;
 }
 .column__logo {
   flex: 2;
@@ -70,12 +70,11 @@ body {
   flex: 2;
 }
 .column--2 {
+  background-image: url(../images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   flex: 4;
-}
-.column--2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .email-form {
@@ -149,7 +148,7 @@ body {
   width: 50rem;
   height: 22rem;
   border-radius: 2rem;
-  box-shadow: 2rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.5);
   font-size: 4rem;
 }
 .success span {
@@ -160,6 +159,102 @@ body {
 .success--1 {
   color: #ce9797;
   font-weight: 700;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column--2 {
+    order: 1;
+    background-image: url(../images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 15rem 0;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    flex: 1;
+  }
+  .column--1 {
+    order: 2;
+    flex: 1;
+    background-image: linear-gradient(135deg, white, #fff5f5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .column__element {
+    padding: 0 2rem;
+  }
+  .column__logo {
+    position: absolute;
+    top: 0;
+    flex: 2;
+    padding-top: 5rem;
+  }
+  .column__headlines span {
+    display: block;
+    letter-spacing: 1rem;
+    padding-top: 0;
+  }
+  .column__headlines--first-line {
+    color: #ce9797;
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .column__headlines--line {
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #413a3a;
+  }
+  .column__content {
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 65rem;
+    color: #ce9797;
+    line-height: 2.5rem;
+  }
+  .column__email-box {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    flex: 2;
+  }
+
+  .email-form {
+    position: relative;
+    width: 25rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .email-form__text {
+    height: 5rem;
+    width: 25rem;
+  }
+  .email-form__icon-error {
+    position: absolute;
+    top: 1.4rem;
+    left: 15rem;
+  }
+  .email-form__icon-error img {
+    width: 20px;
+  }
+  .email-form__invalid {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+
+  footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
